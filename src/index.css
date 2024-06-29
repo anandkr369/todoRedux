@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.App {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.task-input, .task-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.task-input input, .task-item input {
+    padding: 10px;
+    border: 1px solid #b2ebf2;
+    border-radius: 4px;
+    width: calc(100% - 100px);
+}
+
+.task-input button, .task-item button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    background-color: #00acc1;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.task-input button:hover, .task-item button:hover {
+    background-color: #00838f;
+}
+
+.task-item span {
+    cursor: pointer;
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.task-item span:hover {
+    background-color: #e0f7fa;
+}
